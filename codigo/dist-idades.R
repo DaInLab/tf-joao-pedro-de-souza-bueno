@@ -3,7 +3,8 @@ if (!("readxl") %in% installed.packages()) install.packages("readxl")
 
 # Carregando a biblioteca
 library(readxl)
-covid_19_bauru_mortes <- read_excel("Documents/UNESP/IEAD-2022/covid-19-bauru-joao-pedro-bueno/dados/covid_19_bauru_mortes.xlsx")
+#covid_19_bauru_mortes <- read_excel("Documents/UNESP/IEAD-2022/covid-19-bauru-joao-pedro-bueno/dados/covid_19_bauru_mortes.xlsx")
+covid_19_bauru_mortes <- read_excel("./dados/covid_19_bauru_mortes.xlsx")
 
 sort (covid_19_bauru_mortes$idade)
 range(covid_19_bauru_mortes$idade, na.rm = TRUE)
